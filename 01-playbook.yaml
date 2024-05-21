@@ -1,0 +1,5 @@
+- name: ping playbook
+  hosts:  # we need to mention to which Server we are connecting.
+  tasks: #here we are giving List of tasks.
+  - name: Ping the Server
+    ansible.builtin.ping: #Built in ping module.
