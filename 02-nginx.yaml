@@ -1,0 +1,14 @@
+- name: Install and Run Nginx
+  hosts: web
+  become: yes #It will get the Root access to install it.
+  tasks:
+  - name: Install Nginx Package
+    ansible.builtin.package: #Using Package module to install nginx & below have 2 args for this module
+      name: nginx
+      state: present
+
+  - name: Run Nginx Package
+    ansible.builtin.service: # Using Service module to RUN nginx
+      name: nginx
+      state: started   #Started=start | stopped=stop the service module.
+#      started/stopped are idempotent actions that will not run commands unless necessary.
