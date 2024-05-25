@@ -1,0 +1,15 @@
+# VARIABLES in Ansible
+
+- name: Variables from PLAY LEVEL
+  hosts: localhost
+  
+  #Declaring Variables
+  vars:
+    Course: "Devops"
+    Trainer: "Sivakumar"
+    Duration: "120 HOURS"
+  tasks:
+  - name: Check Variables
+    ansible.builtin.debug:
+      msg: "Hi, I am Learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
+
