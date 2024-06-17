@@ -8,6 +8,7 @@
     Course: "Devops"
     Trainer: "Sivakumar"
     Duration: "120 HOURS"
+  # You can override the Variables.
   
   tasks:
   - name: Check Variables
@@ -15,3 +16,4 @@
       Course: "DevOps with AWS"
     ansible.builtin.debug:
       msg: "Hi, I am Learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
+  # Task level Varibale Overrides Playlevel variables.
