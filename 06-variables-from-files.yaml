@@ -1,0 +1,9 @@
+- name: Variables from PLAY LEVEL
+  hosts: localhost
+  vars_files: # To CALL, we are Declaring the filename
+    variables.yaml
+  
+  tasks:
+  - name: Check variables
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, and Duration is {{Duration}}"
