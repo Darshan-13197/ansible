@@ -3,3 +3,8 @@ Trainer : "Sivakumar"
 Duration : "110 Hours"
 
 # If we need to change any values, we can change it here, not from the main file 06-variables-from-files.
+
+#10-vars-preference.yaml
+
+PERSON: "Siva from FILE"
+WISHES: "Morning from FILE"
