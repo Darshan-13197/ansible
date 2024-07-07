@@ -7,12 +7,12 @@
 
  #Decalring PROMPT in variable to Display prompt in the Output 
   vars_prompt:
-  - name: USERNAME
-    prompt: Please Enter your USERNAME
+  - name: PERSON
+    prompt: Please Enter your name
     private: false #user can see what they are entering
 
-  - name: PASSWORD
-    prompt: Please Enter your PASSWORD
+  - name: WISHES
+    prompt: Please Enter your wishes
     private: true  #user cannot see while entering Password
 
 #So Variables  wherever we have options we are mentioning everywhere.Here Declaring in PLAY Level
@@ -23,9 +23,15 @@
 #Declaring TASK level
   tasks:
     - name: Check Variables
-      vars:
-        PERSON: "Siva from TASK"
-        WISHES: "Morning from TASK"
+      # vars:
+      #   PERSON: "Siva from TASK"
+      #   WISHES: "Morning from TASK"
 
       ansible.builtin.debug:
         msg: "Hello {{PERSON}}, Good {{WISHES}}"
+
+
+#Output - Preference
+# 1. CMD Line
+# 2. TASK Level
+# 3. 
