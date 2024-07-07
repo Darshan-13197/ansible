@@ -2,8 +2,8 @@
   hosts: localhost
 
 #Declaring Vaiables as Files to call the variables.yaml
-  # vars_files:   
-  #   variables.yaml
+  vars_files:   
+    variables.yaml
 
  #Decalring PROMPT in variable to Display prompt in the Output 
   # vars_prompt:
@@ -16,9 +16,9 @@
   #   private: true  #user cannot see while entering Password
 
 #So Variables  wherever we have options we are mentioning everywhere.Here Declaring in PLAY Level
-  vars:
-    PERSON: "Sivakumar from PLAY"
-    WISHES: "Morning from PLAY"
+  # vars:
+  #   PERSON: "Sivakumar from PLAY"
+  #   WISHES: "Morning from PLAY"
 
 #Declaring TASK level
   tasks:
