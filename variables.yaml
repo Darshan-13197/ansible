@@ -1,3 +1,5 @@
-Course : "DEVOPS"
+Course : "DEVOPS with AWS"
 Trainer : "Sivakumar"
 Duration : "110 Hours"
+
+# If we need to change any values, we can change it here, not from the main file 06-variables-from-files.
