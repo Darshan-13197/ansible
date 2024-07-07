@@ -6,14 +6,14 @@
     variables.yaml
 
  #Decalring PROMPT in variable to Display prompt in the Output 
-  vars_prompt:
-  - name: PERSON
-    prompt: Please Enter your name
-    private: false #user can see what they are entering
+  # vars_prompt:
+  # - name: PERSON
+  #   prompt: Please Enter your name
+  #   private: false #user can see what they are entering
 
-  - name: WISHES
-    prompt: Please Enter your wishes
-    private: true  #user cannot see while entering Password
+  # - name: WISHES
+  #   prompt: Please Enter your wishes
+  #   private: true  #user cannot see while entering Password
 
 #So Variables  wherever we have options we are mentioning everywhere.Here Declaring in PLAY Level
   vars:
