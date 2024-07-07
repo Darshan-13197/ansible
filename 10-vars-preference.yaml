@@ -1,0 +1,27 @@
+- name: VARIABLES- PREFERENCES from PLAYBOOK
+  hosts: localhost
+
+#Declaring Vaiables as Files to call the variables.yaml
+  vars_files:   
+    variables.yaml
+
+ #Decalring PROMPT in variable to Display prompt in the Output 
+  vars_prompt:
+  - name: USERNAME
+    prompt: Please Enter your USERNAME
+    private: false #user can see what they are entering
+
+  - name: PASSWORD
+    prompt: Please Enter your PASSWORD
+    private: true  #user cannot see while entering Password
+
+#So Variables  wherever we have options we are mentioning everywhere.
+  vars:
+    PERSON: "Sivakumar from PLAY"
+    WISHES: "Morning from PLAY"
+
+#Declaring TASK level
+  tasks:
+    -name: Check Variables
+      ansible.builtin.debug:
+        msg: "Hello {{PERSON}}, Good {{WISHES}}"
