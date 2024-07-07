@@ -15,7 +15,7 @@
     prompt: Please Enter your PASSWORD
     private: true  #user cannot see while entering Password
 
-#So Variables  wherever we have options we are mentioning everywhere.
+#So Variables  wherever we have options we are mentioning everywhere.Here Declaring in PLAY Level
   vars:
     PERSON: "Sivakumar from PLAY"
     WISHES: "Morning from PLAY"
@@ -23,5 +23,8 @@
 #Declaring TASK level
   tasks:
     -name: Check Variables
+      PERSON: "Siva from TASK"
+      WISHES: "Morning from TASK"
+
       ansible.builtin.debug:
         msg: "Hello {{PERSON}}, Good {{WISHES}}"
