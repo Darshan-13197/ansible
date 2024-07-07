@@ -2,8 +2,8 @@
   hosts: localhost
 
 #Declaring Vaiables as Files to call the variables.yaml
-  vars_files:   
-    variables.yaml
+  # vars_files:   
+  #   variables.yaml
 
  #Decalring PROMPT in variable to Display prompt in the Output 
   # vars_prompt:
