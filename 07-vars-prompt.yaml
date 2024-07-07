@@ -1,5 +1,5 @@
 - name: Variables from PROMPT
-  host: localhost
+  hosts: localhost
 
   vars_prompt: # Which it will ask the PROMPT for User
   - name: USERNAME
