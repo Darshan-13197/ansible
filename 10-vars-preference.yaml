@@ -22,7 +22,7 @@
 
 #Declaring TASK level
   tasks:
-    -name: Check Variables
+    - name: Check Variables
       PERSON: "Siva from TASK"
       WISHES: "Morning from TASK"
 
