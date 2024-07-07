@@ -1,0 +1,8 @@
+- name: Variables from Arguments
+  hosts: localhost
+# In Play Level we have not declared any Values
+
+  tasks:
+    - name: Checking Vars from Args
+      ansible.builtin.debug:
+        msg: "Hi {{PERSON}}", Good {{WISHES}}
