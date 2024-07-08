@@ -17,7 +17,7 @@
     
     Trainer: true   # Boolean
   
-  tasks:
+  tasks:            #LIST, Because the below values are listed with ' - '
     - name: Print Key Value Pair
       ansible.builtin.debug:
         msg: "Name: {{NAME}}"
