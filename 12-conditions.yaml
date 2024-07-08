@@ -9,4 +9,4 @@
 
   - name: Print Variable Value
     ansible.builtin.debug
-    msg: "User output is {{user}}"
+      msg: "User output is {{user}}"
