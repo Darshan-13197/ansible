@@ -28,9 +28,9 @@
     
     - name: Print Key MAP
       ansible.builtin.debug:
-        msg: "Name: {{NAME}}"
+        msg: "Name: {{Experience}}"
 
     - name: Print BOOLEAN
       ansible.builtin.debug:
-        msg: "Name: {{NAME}}"
+        msg: "Name: {{Trainer}}"
 
