@@ -1,5 +1,6 @@
 - name: CONDITIONS
   hosts: localhost
+  become: yes #becoming root user.
 
   tasks:
   - name: Check roboshop user exists or not
