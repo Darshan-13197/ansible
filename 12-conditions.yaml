@@ -13,10 +13,10 @@
 
   - name: Print EXIT STATUS or Return Code
     ansible.builtin.debug:
-      msg: "Status is: {{user.rc}}"
+      msg: "Status is: {{user.rc}}"   #In Ansible the EXIT STATUS is - " .rc "
 
   - name: Creating USER
     ansible.builtin.user: #To add a User. Also we can give- name, uid, group, comment
       name: roboshop
     
-    when: user.rc!=0 
+    when: user.rc != 0  # Ansible Condition 
