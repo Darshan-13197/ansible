@@ -4,8 +4,8 @@
   tasks:
   - name: Check roboshop user exists or not
     ansible.builtin.command: id roboshop
-    register: user
-    ignore_errors: true
+    register: user #user is a variable name | to grab value using 'register'
+    ignore_errors: true # ansilbe will not exit even it got error
 
   - name: Print Variable Value
     ansible.builtin.debug:
@@ -14,3 +14,9 @@
   - name: Print EXIT STATUS or Return Code
     ansible.builtin.debug:
       msg: "Status is: {{user.rc}}"
+
+  - name: Creating USER
+    ansible.builtin.user: #To add a User. Also we can give- name, uid, group, comment
+      name: roboshop
+    
+    when: user.rc!=0 
