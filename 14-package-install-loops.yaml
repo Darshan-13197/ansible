@@ -1,0 +1,14 @@
+- name: PACKAGE INSTALL
+  hosts: localhost
+  become: yes
+
+  tasks:
+  - name: PRINT PACKAGES
+    ansible.builtin.package: #Package Module
+      name: {{item}}
+      state: present        
+
+    loop:
+    - mysql
+    - postfix
+    - git
