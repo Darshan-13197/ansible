@@ -4,11 +4,11 @@
 
   tasks:
   - name: INSTALL or UNINSTALL PACKAGES
-      ansible.builtin.package:
-        name: "{{item.name}}"
-        state: "{{item.state}}"
+    ansible.builtin.package:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
     
     loops:
-      - { name: 'git' , state: 'absentt'}
-      - { name: 'nginx' , state: 'present'}
-      - { name: 'mysql' , state: 'absent'}
+      - { name: 'git' , state: 'absentt' }
+      - { name: 'nginx' , state: 'present' }
+      - { name: 'mysql' , state: 'absent' }
