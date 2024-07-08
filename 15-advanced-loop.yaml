@@ -5,10 +5,10 @@
   tasks:
   - name: INSTALL or UNINSTALL PACKAGES
     ansible.builtin.package:
-      name: "{{item.name}}"
+      name: "{{item.name}}"     #To refer the List of values
       state: "{{item.state}}"
     
     loop:
-    - { name: 'git' , state: 'absent' }
+    - { name: 'git' , state: 'absent' }   
     - { name: 'nginx' , state: 'present' }
     - { name: 'mysql' , state: 'present' }
