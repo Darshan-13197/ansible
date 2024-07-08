@@ -5,7 +5,7 @@
   tasks:
   - name: PRINT PACKAGES
     ansible.builtin.package: #Package Module
-      name: {{item}}
+      name: "{{item}}"
       state: present        
 
     loop:
