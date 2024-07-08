@@ -9,6 +9,6 @@
       state: "{{item.state}}"
     
     loop:
-    - { name: 'git' , state: 'absent' }   
+    - { name: 'git' , state: 'absent' }   #this entry is an  ITEM-which have multiple things. You can add as many.
     - { name: 'nginx' , state: 'present' }
     - { name: 'mysql' , state: 'present' }
