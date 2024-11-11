@@ -1,7 +1,7 @@
 - name: ping playbook
-  hosts: web    # we need to mention to which Server/GROUP are we connecting. It will refer to inventory file.
-  tasks:        # here we are giving List of tasks.
-  - name: Ping the Server
-    ansible.builtin.ping: #Built in ping module. Once you RUN, it will ping the Web component.
+  hosts: web
+  tasks:
+  - name: ping the server
+    ansible.builtin.ping:
 # We are giving UN and PASS in ansible.cfg under VAULT --> which is High Secure comapre it to Ansible folder.
 # In Vault, we are creating like a vault i.e.  group_vars --> we can give all our variables.
